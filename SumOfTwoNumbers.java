@@ -1,5 +1,5 @@
-//Student's name: g
-//Group:
+//Student's name: Gabriela Zambrano
+//Group: 10c
 //Date:
 //Topic:
 
