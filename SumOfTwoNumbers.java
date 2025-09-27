@@ -12,7 +12,7 @@ class MinutesToYearsDays {
         Scanner scanner = new Scanner(System.in);
         
         
-        System.out.println("Por favor, ingrese la cantidad de minutos:");
+        System.out.println("Please, enter your number of minutes:");
         long minutes = scanner.nextLong(); 
         
         
@@ -22,7 +22,7 @@ class MinutesToYearsDays {
         long days = remainingMinutes / (60 * 24); 
         
     
-        System.out.println(minutes + " minutos son aproximadamente " + years + " años y " + days + " días.");
+        System.out.println(minutes + " the minutes are approximately" + years + " years and " + days + " days.");
         
         
         scanner.close();
