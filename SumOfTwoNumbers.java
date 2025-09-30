@@ -27,4 +27,5 @@ class MinutesToYearsDays {
         
         scanner.close();
     }
+   }
 
