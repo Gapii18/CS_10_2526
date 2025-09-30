@@ -1,5 +1,5 @@
 // Refernce: https://www.w3schools.com/java/ref_output_printf.asp
-// Created by :
+// Created by : Gabriela Zambrano 
 // Group:10BDate:
 // Topic:
 // Date:
@@ -7,53 +7,47 @@
 
 import java.util.Scanner;
 
-//Step 1: Seeting Class name and Scanner
-
-public class VacationCalculator {
+public class SumOfThreeNumbers {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        
-        // Step 2: Collect input
+        Scanner scanner = new Scanner(System.in);
 
-        // Get destination
-        System.out.print("Enter your dream destination: ");
-        String destination = input.nextLine();
-        
-        // Get costs
-        System.out.print("Flight cost: $");
-        double flightCost = input.nextDouble();
-        
-        System.out.print("Hotel cost per night: $");
-        double hotelPerNight = input.nextDouble();
-        
-        System.out.print("Number of nights: ");
-        int nights = input.nextInt();
-        
-        System.out.print("Food cost per day: $");
-        double foodPerDay = input.nextDouble();
-        
-        System.out.print("Activities budget: $");
-        double activities = input.nextDouble();
-        
-        // Step3:  Process data
+        System.out.println("Please enter the first number:");
+        double number1 = scanner.nextDouble();
 
-        // Calculate totals
-        double hotelTotal = hotelPerNight * nights;
-        double foodTotal = foodPerDay * nights;
-        double grandTotal = flightCost + hotelTotal + foodTotal + activities;
-        
+        System.out.println("Please enter the second number:");
+        double number2 = scanner.nextDouble();
 
-        // Step 4: Display results
-        System.out.println("\n=== VACATION BUDGET ===");
-        System.out.println("Destination: " + destination);
-        System.out.printf("Flight: $%.2f%n", flightCost);
-        System.out.printf("Hotel (%d nights): $%.2f%n", nights, hotelTotal);
-        System.out.printf("Food (%d days): $%.2f%n", nights, foodTotal);
-        System.out.printf("Activities: $%.2f%n", activities);
-        System.out.println("-------------------");
-        System.out.printf("TOTAL COST: $%.2f%n", grandTotal);
-        
-        // Closing scanner
-        input.close();
+        System.out.println("Please enter the third number:");
+        double number3 = scanner.nextDouble();
+
+        double sum = number1 + number2 + number3;
+
+        System.out.println("The sum of " + number1 + ", " + number2 + " and " + number3 + " is: " + sum);
+
+        scanner.close();
+    }
+}
+
+
+
+
+
+import java.util.Scanner;
+
+public class ProductOfTwoNumbers {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Please enter the first number:");
+        double number1 = scanner.nextDouble();
+
+        System.out.println("Please enter the second number:");
+        double number2 = scanner.nextDouble();
+
+        double product = number1 * number2;
+
+        System.out.println("The product of " + number1 + " and " + number2 + " is: " + product);
+
+        scanner.close();
     }
 }
